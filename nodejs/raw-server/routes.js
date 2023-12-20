@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 
 const requestHandler = (req, res) => {
-    console.log('incoming request...')
+    // console.log('incoming request...')
 
     const url = req.url;
     const method = req.method;
