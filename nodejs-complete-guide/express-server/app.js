@@ -16,7 +16,7 @@ app.use(shopRouter);
 
 // generic 404 error handling for route not found
 app.use((req, res, next) => {
-    res.status(404).send("<h1>Page not found</h1>");
+    res.status(404).send(`<h1>Page not found</h1><a href="/">Go Home</a>`);
 });
 
 app.listen(3000);

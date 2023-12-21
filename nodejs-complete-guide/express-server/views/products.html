@@ -13,13 +13,16 @@
         <nav>
             <ul class="menu">
                 <li><a href="/">Home</a></li>
-                <li><a href="/admin/add-product">Add Product</a></li>
+                <li><a href="/admin/products">Products</a></li>
+                <li><a href="/admin/products/lead">Lead Product</a></li>
+                <li><a href="/version">Stable App Version</a></li>
+                <li><a href="/version?latest=true">Latest App Version</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Add a new product!</h1>
-        <form method='POST' action='/admin/add-product'>
+        <form method='POST' action='/admin/products'>
             <label for="product">
                 Product Name
                 <input type='text' id="product" name="product" />
