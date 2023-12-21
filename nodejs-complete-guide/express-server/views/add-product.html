@@ -5,18 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Product | Pokeshop</title>
-    <style>
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu {
-            display: flex;
-            gap: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/main.css" />
 </head>
 
 <body>
@@ -33,7 +22,7 @@
         <form method='POST' action='/admin/add-product'>
             <label for="product">
                 Product Name
-                <input type='text' name='product' />
+                <input type='text' id="product" name="product" />
             </label>
             <button type='submit'>Submit</button>
         </form>
