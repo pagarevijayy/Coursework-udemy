@@ -1,33 +1,21 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const adminRouter = require('./routes/admin')
+const shopRouter = require('./routes/shop')
+
+
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: false})) //next() is implicitly called by that inner function.
 
-// order matters for the routes. (based on pattern matching - more specific routes at the top)
-app.use('/', (req, res, next) => { 
-    // console.log('this always runs.');
-    next(); // allows the request to go to the next middleware.
-});
+//order of middleware matters.
+app.use('/admin',adminRouter);
+app.use(shopRouter);
 
-app.use('/add-product', (req, res, next) => { 
-    res.send(`
-        <h1>Add a new product!</h1>
-        <form method='POST' action='/product'>
-            <input type='text' name='product'/>
-            <button type='submit'>Submit</button>
-        </form>
-    `);
-});
-
-app.post('/product', (req, res, next) => { 
-    console.log('req body:', req.body)
-    res.redirect('/');
-});
-
-app.use('/', (req, res, next) => { 
-    res.send('<h1>Hello from express home!</h1>');
-});
+// generic 404 error handling for route not found
+app.use((req, res, next) => {
+    res.status(404).send('<h1>Page not found</h1>')
+})
 
 app.listen(3000)
