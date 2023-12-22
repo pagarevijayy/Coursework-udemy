@@ -1,4 +1,4 @@
-const https = require('https');
+const https = require('node:https');
 
 // Goal: learn about internal workings of nodejs - OS delegation and network
 
