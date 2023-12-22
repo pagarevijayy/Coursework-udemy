@@ -1,6 +1,6 @@
 const crypto = require('node:crypto');
 
-// Goal: learn about internal workings of nodejs - event loop - threadpool
+// Goal: learn about internal workings of nodejs - event loop - threadpool (handled by libuv)
 
 // Exercise: to detect presence of threadpool - default 4 threads run concurrently
 

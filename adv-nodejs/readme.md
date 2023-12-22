@@ -1,6 +1,4 @@
-# Nodejs
-
->A good refresher!
+# Nodejs - Advanced Concepts
 
 [NodeJS - Advanced Concepts](https://www.udemy.com/course/advanced-node-for-developers/)  - Stephen Grider
 
