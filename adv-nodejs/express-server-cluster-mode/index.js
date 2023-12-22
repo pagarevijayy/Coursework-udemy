@@ -8,9 +8,9 @@ if (cluster.isMaster) {
     // here 5 instances of node server are created.
     cluster.fork();
     cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
-    // cluster.fork();
+    cluster.fork();
+    cluster.fork();
+    cluster.fork();
 } else {
     // child mode - act like a server and do nothing else.
     const express = require("express");

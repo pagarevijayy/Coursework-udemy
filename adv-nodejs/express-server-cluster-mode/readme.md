@@ -1,3 +1,3 @@
-# Express + Nodejs Server
+# Node - Cluster Mode
 
-Implement cluster mode.
+Nodejs server cluster mode implementation.
