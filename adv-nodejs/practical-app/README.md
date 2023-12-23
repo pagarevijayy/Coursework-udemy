@@ -1,5 +1,5 @@
-# AdvancedNodeStarter
-Starting project for a course on Advanced Node @ Udemy
+# Practical App
+Practical app
 
 ### Setup
 
