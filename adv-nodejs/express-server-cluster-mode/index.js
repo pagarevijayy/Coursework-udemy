@@ -5,10 +5,9 @@ console.log("cluster:", cluster.isMaster);
 if (cluster.isMaster) {
     // if file is being executed in master mode, execute it *again* but in child mode
 
-    // here 5 instances of node server are created.
-    cluster.fork();
-    cluster.fork();
-    cluster.fork();
+    // here 2 instances of node server are created.
+    // note: increasing the no.of children beyond the cores available in cpu would start giving negative results. (e.g. 2 children for dual core.)
+    // number of children should match the physical/logical cores available in the cpu
     cluster.fork();
     cluster.fork();
 } else {
