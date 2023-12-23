@@ -23,3 +23,5 @@ Reference:
     - SQL(mysql2, sequelize)
     - NoSQL(mongoDB & mongoose)
 ```
+
+ps: can do separate crash course on ORMs as a refresher when implementing.
