@@ -1,5 +1,12 @@
-# Practical App
-Practical app
+# Data caching with Redis App
+
+Data caching with Redis using blog app.
+
+Tech stack, services, concepts:
+- Redis (caching - set, get, hset, hget, clear cache, expire cache.)
+- packages: passport.js, google oauth 2.0, cookie session, body parser
+- server: node express server, mongodb + mongoose
+- client: react + material design
 
 ### Setup
 
