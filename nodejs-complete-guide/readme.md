@@ -22,6 +22,20 @@ Reference:
 - databases & ORM
     - SQL(mysql2, sequelize)
     - NoSQL(mongoDB & mongoose)
+- features:
+    - emails (nodemailer)
+    - files handling (multer)
+    - auth, validation, error handling, sessions/cookies
+    - pagination, payments (stripe), testing
+    - REST apis, CORS, HTTP headers, JWT tokens
+    - websockets (socket.io)
+    - graphql with node/express (types, query/mutation/subscription, schema, resolver, graphiql)
+    - modern js
+    - typescript
 ```
 
-ps: can do separate crash course on ORMs as a refresher when implementing.
+ps refreshers: 
+ 1. ORMs crash course.
+ 2. GraphQL crash course.
+ 3. Testing Jest
+ 4. Tasks: emails, , files (multer), validations, jwt, socket.io,
