@@ -1,6 +1,6 @@
 # Lyrical-GraphQL
 
-Starter project from a GraphQL course on Udemy.com
+App that implements react client along with graphql-apollo client
 
 ### Setup
 
