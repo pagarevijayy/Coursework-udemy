@@ -1,6 +1,9 @@
 # Lyrical-GraphQL
 
-App that implements react client along with graphql-apollo client
+End-to-end CRUD app with grapql, express, react, apollo-cient, react-router implementation.
+
+Features:
+- add song, delete song, read songs list, read individual song details. (graphql apis, implemented on different pages)
 
 ### Setup
 
