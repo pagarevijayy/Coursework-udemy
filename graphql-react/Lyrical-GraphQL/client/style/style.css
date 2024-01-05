@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.vote-box{
+    display: flex;
+    align-items: center;
+}
+
 .material-icons{
     cursor: pointer;
+    margin: 5px
 }
