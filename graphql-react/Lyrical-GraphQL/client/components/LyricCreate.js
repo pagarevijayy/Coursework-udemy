@@ -25,7 +25,7 @@ class LyricCreate extends Component {
         return (
             <div>
                 <form onSubmit={this.onSubmit.bind(this)}>
-                    <label htmlFor="lyric">Lyric
+                    <label htmlFor="lyric"> Add a lyric
                         <input type="text" name="lyric" value={this.state.lyric} 
                         onChange={(e)=> this.setState({ lyric: e.target.value})} />
                     </label>
